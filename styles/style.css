@@ -133,4 +133,35 @@ nav .burger div {
     }
   }
 }
+
+.underline-effect {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-effect::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: -50%;
+  left: 25%;
+  -webkit-transition: bottom right;
+  transition: bottom right;
+  background-color: #ffffff;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.underline-effect:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
 /*# sourceMappingURL=style.css.map */
