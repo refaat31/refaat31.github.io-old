@@ -35,17 +35,18 @@ nav {
       letter-spacing: 2px;
       font-weight: bold;
       font-size: 14px;
-      
     }
   }
 
   .burger {
     display: none;
+
     div {
       width: 25px;
       height: 3px;
       background-color: rgb(235, 235, 235);
       margin: 5px;
+      transition: all 0.3s ease;
     }
   }
 }
@@ -99,23 +100,35 @@ nav {
   }
 }
 .underline-effect {
-    display: inline-block;
-    position: relative;
-  }
-  .underline-effect::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 50%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: -50%;
-    left: 25%;
-    transition: bottom right;
-    background-color: #ffffff;
-    transition: transform 0.3s ease-out;
-  }
-  .underline-effect:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom center;
-  }
+  display: inline-block;
+  position: relative;
+}
+.underline-effect::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -50%;
+  left: 25%;
+  transition: bottom right;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-out;
+}
+.underline-effect:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

@@ -56,6 +56,8 @@ nav .burger div {
   height: 3px;
   background-color: #ebebeb;
   margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1024px) {
@@ -163,5 +165,19 @@ nav .burger div {
           transform: scaleX(1);
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
 /*# sourceMappingURL=style.css.map */
