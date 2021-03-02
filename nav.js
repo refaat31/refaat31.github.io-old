@@ -6,22 +6,22 @@ document.write(`
     <ul class='nav-links'>
       <li>
         <a href='./index.html' class='underline-effect'>
-          Home
+          <div class='current'>Home</div>
         </a>
       </li>
       <li>
         <a href='./about.html' class='underline-effect'>
-          About
+          <div>About</div>
         </a>
       </li>
       <li>
         <a href='#' class='underline-effect'>
-          Projects
+          <div>Projects</div>
         </a>
       </li>
       <li>
         <a href='#' class='underline-effect'>
-          Contact
+          <div>Contact</div>
         </a>
       </li>
     </ul>

@@ -132,3 +132,9 @@ nav {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
+nav .current {
+  color: rgb(5, 255, 255);
+  font-weight: bold;
+  text-transform: capitalize;
+}

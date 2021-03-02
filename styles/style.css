@@ -180,4 +180,10 @@ nav .burger div {
   -webkit-transform: rotate(45deg) translate(-5px, -6px);
           transform: rotate(45deg) translate(-5px, -6px);
 }
+
+nav .current {
+  color: #05ffff;
+  font-weight: bold;
+  text-transform: capitalize;
+}
 /*# sourceMappingURL=style.css.map */
