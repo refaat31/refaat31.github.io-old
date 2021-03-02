@@ -1,6 +1,6 @@
 const url = document.URL;
 
-if (url.search('index.html') != -1) {
+if (url.search('about.html') != -1) {
   document.write(`
     <nav>
       <div class='logo'>
@@ -9,12 +9,12 @@ if (url.search('index.html') != -1) {
       <ul class='nav-links'>
         <li>
           <a href='./index.html' class='underline-effect'>
-            <div class='current'>Home</div>
+            <div>Home</div>
           </a>
         </li>
         <li>
           <a href='./about.html' class='underline-effect'>
-            <div>About</div>
+            <div class='current'>About</div>
           </a>
         </li>
         <li>
@@ -35,7 +35,7 @@ if (url.search('index.html') != -1) {
       </div>
     </nav>
   `);
-} else if (url.search('about.html') != -1) {
+} else {
   document.write(`
     <nav>
       <div class='logo'>
@@ -44,12 +44,12 @@ if (url.search('index.html') != -1) {
       <ul class='nav-links'>
         <li>
           <a href='./index.html' class='underline-effect'>
-            <div>Home</div>
+            <div class='current'>Home</div>
           </a>
         </li>
         <li>
           <a href='./about.html' class='underline-effect'>
-            <div class='current'>About</div>
+            <div>About</div>
           </a>
         </li>
         <li>
